@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    background-color: black;
+    padding-top: 5rem;
+    padding-inline: 5rem;
+}
+
+.todo-input {
+    text-align: center;
+    margin-block: 2rem;
+}
+
+.todo-input input {
+    width: 21rem;
+    padding: 10px;
+    border-radius: 8px;
+    padding-right: 40px;
+}
+
+.todo-input>div {
+    position: relative;
+    display: inline-block;
+}
+
+.todo-input button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    border-radius: 50%;
+    border: none;
+    background-color:black;
+    color: yellow;
+    font-weight: bold;
+}
+
+#deleteButton{
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#todoList li {
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+}
+
+#todoList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 567px) {
+    #todoList {
+        grid-template-columns: 1fr;
+    }
+}
