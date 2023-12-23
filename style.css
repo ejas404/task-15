@@ -66,8 +66,20 @@ main {
     gap: 1rem;
 }
 
+
+
+/* media query for mobile responsivenes */
+
 @media only screen and (max-width: 567px) {
     #todoList {
         grid-template-columns: 1fr;
+    }
+}
+
+/* media query for tab responsiveness */
+
+@media only screen and (min-width:568px) and ( max-width: 768px) {
+    #todoList {
+        grid-template-columns: 1fr 1fr;
     }
 }
