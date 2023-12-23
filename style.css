@@ -7,8 +7,14 @@
 main {
     min-height: 100vh;
     background-color: black;
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-inline: 5rem;
+}
+h1{
+    color: #fff;
+}
+.title{
+    margin-block: 2rem;
 }
 
 .todo-input {
@@ -73,6 +79,10 @@ main {
 @media only screen and (max-width: 567px) {
     #todoList {
         grid-template-columns: 1fr;
+    }
+
+    .todo-input input{
+        width: 20rem;
     }
 }
 
