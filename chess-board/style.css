@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.board{
+    height: 90vh;
+    background-color:rgba(165, 42, 42, 0.399);
+    display: grid;
+    padding: 10px;
+    
+}
+
+.row{
+    display: flex;
+}
+
+.cell{
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black{
+    background-color: black;
+}
+
+.white{
+    background-color:white;
+}
+
+p{
+    color: rgb(224, 184, 6);
+    
+}
